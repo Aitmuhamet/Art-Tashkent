@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'icons';
+    src: url('icons/fa-light-300.ttf');
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial;
+    font-weight: 400;
+}
+
+*::before {
+    font-family: 'icons';
+    font-weight: 300;
+}
+
+.row {
+    margin-right: 0;
+    margin-top: 0;
+}
+#box_1 .box_card {
+    background: white;
+}
+#box_2 .box_card {
+    background: #EBF2E8;
+}
+#box_3 .box_card {
+    background: #BDCFB5;
+}
+#box_4 .box_card {
+    background: #EBF2E8;
+}
+
+.box_card {
+    height: 100vh;
+    /* border: 1px solid black; */
+
+    background: white;
+
+    position: relative;
+    padding-right: 12px;
+}
+
+.box_cardCentre {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    /* flex-direction: column;
+    justify-content: space-between; */
+
+    padding: 20px 0 30px 30px;
+}
+.box_cardCentre .social{
+    display: none;
+}
+
+.social img {
+    width: 15px;
+    margin-right: 8px;
+}
+.social a {
+    text-decoration: none;
+}
+
+.box_card_logo {
+    margin: 10px auto;
+    padding: 20px auto;
+
+    /* width: 70%; */
+}
+
+.box_card_logo img {
+    /* width: 100%; */
+}
+
+.main_logo img {
+    display: block;
+}
+
+/* Вторая карточка */
+.box_address {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 12px;
+    width: 75%;
+    position: absolute;
+    right: 0;
+}
+
+.box_address__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 5%;
+}
+
+.box_address__text p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.box_addressEllipse {
+    display: flex;
+    align-items: center;
+}
+
+/* Третья карточка */
+.box_card3__content {
+    position: absolute;
+    right: 12px;
+    display: flex;
+    min-width: 57%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.box_card3__img,
+.box_card3_text {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* Четвертая карточка */
+.box_card4__img {
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.box_card4__img img,
+.box_card3__img img,
+.box_addressEllipse img {
+    height: 90%;
+}
+
+.box_card3__img img {
+    border: 2px solid;
+    border-radius: 2000px 0 0 2000px;
+}
+.box_card4__img img {
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.box_padding {
+    padding-right: 0;
+}
+
+.box_animation,
+.box_card,
+.box_card_logo,
+.box_card_logo img {
+    transition-property: all;
+    transition-duration: .5s;
+}
